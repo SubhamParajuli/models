@@ -1,0 +1,6 @@
+[ 2025-10-15 12:03:51,431 ] 20 root - INFO - Log file created successfully!
+[ 2025-10-15 12:03:52,795 ] 9 root - INFO - exectution has started
+[ 2025-10-15 12:03:52,796 ] 18 root - INFO - Reading SQL database started
+[ 2025-10-15 12:03:52,803 ] 26 root - INFO - Connection established
+[ 2025-10-15 12:03:53,186 ] 25 root - INFO - Reading from mysql database
+[ 2025-10-15 12:03:53,199 ] 31 root - INFO - Data ingestion is completed.

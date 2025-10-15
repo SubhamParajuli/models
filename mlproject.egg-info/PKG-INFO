@@ -6,6 +6,8 @@ Author-email: suvamparajuli222@gmail.com
 Requires-Dist: numpy
 Requires-Dist: pandas
 Requires-Dist: scikit-learn
+Requires-Dist: mysql-connector-python
+Requires-Dist: pymysql
 Dynamic: author
 Dynamic: author-email
 Dynamic: requires-dist
