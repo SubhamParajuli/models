@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: mlproject
+Version: 0.0.1
+Author: Subham Parajuli
+Author-email: suvamparajuli222@gmail.com
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-dist
