@@ -8,6 +8,9 @@ Requires-Dist: pandas
 Requires-Dist: scikit-learn
 Requires-Dist: mysql-connector-python
 Requires-Dist: pymysql
+Requires-Dist: python-dotenv
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
 Dynamic: author
 Dynamic: author-email
 Dynamic: requires-dist
