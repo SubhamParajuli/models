@@ -5,10 +5,10 @@ from src.mlproject.app_logger import logging
 import pandas as pd
 from src.mlproject.utils import read_sql_data
 from sklearn.model_selection import train_test_split
-
 from dataclasses import dataclass
 import warnings
 warnings.filterwarnings('ignore', message='pandas only supports SQLAlchemy')
+
 @dataclass
 class DataIngestionConfig:
     train_data_path:str=os.path.join('artifacts','train.csv')
@@ -23,6 +23,7 @@ class DataIngestion:
     def initiate_data_ingestion(self):
         try:
             df=read_sql_data()
+            print(df.head())
             logging.info("Reading from mysql database")
             os.makedirs(os.path.dirname(self.ingestion_config.train_data_path),exist_ok=True)
             df.to_csv(self.ingestion_config.raw_data_path,index=False,header=True)
