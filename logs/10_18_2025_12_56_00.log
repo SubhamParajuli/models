@@ -1,0 +1,14 @@
+[ 2025-10-18 12:56:00,536 ] 20 root - INFO - Log file created successfully!
+[ 2025-10-18 12:56:01,836 ] 10 root - INFO - exectution has started
+[ 2025-10-18 12:56:01,836 ] 22 root - INFO - Reading SQL database started
+[ 2025-10-18 12:56:01,843 ] 30 root - INFO - Connection established
+[ 2025-10-18 12:56:01,871 ] 28 root - INFO - Reading from mysql database
+[ 2025-10-18 12:56:01,879 ] 34 root - INFO - Data ingestion is completed.
+[ 2025-10-18 12:56:01,910 ] 68 root - INFO - Reading the train and test file.
+[ 2025-10-18 12:56:01,910 ] 48 root - INFO - Categorical Columns:['gender', 'race_ethnicity', 'parental_level_of_education', 'lunch', 'test_preparation_course']
+[ 2025-10-18 12:56:01,910 ] 49 root - INFO - Numerical Columns: ['writing_score', 'reading_score']
+[ 2025-10-18 12:56:01,911 ] 81 root - INFO - Applying preprocessing on training and test dataframe
+[ 2025-10-18 12:56:01,924 ] 93 root - INFO - Saved preprocessing object.
+[ 2025-10-18 12:56:01,925 ] 35 root - INFO - Spit training and test input data
+[ 2025-10-18 12:56:01,925 ] 51 root - INFO - Evaluating HyperParameters of model
+[ 2025-10-18 12:56:04,942 ] 108 root - INFO - Best found model on both training and testing dataset: Lasso(alpha=0.1) at 88.2059128266036

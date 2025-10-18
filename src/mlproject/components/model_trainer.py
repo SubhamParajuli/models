@@ -27,8 +27,8 @@ class ModelTrainConfig:
 
 
 class ModelTrainer:
-    def __init_(self):
-        self.model_trainer_config=ModelTrainConfig()
+    def __init__(self):
+        self.model_train_config = ModelTrainConfig()
 
     def initiate_model_trainer(self,train_array,test_array):
         try:
@@ -108,7 +108,7 @@ class ModelTrainer:
             logging.info(f"Best found model on both training and testing dataset: {best_model} at {best_model_score*100}")
 
             save_object(
-                file_path=self.model_trainer_config.trained_model_file_path,
+                file_path=self.model_train_config.trained_model_file_path,
                 obj=best_model
             )
 
