@@ -1,0 +1,6 @@
+[ 2025-10-18 14:46:01,897 ] 20 root - INFO - Log file created successfully!
+[ 2025-10-18 14:46:12,712 ] 1025 httpx - INFO - HTTP Request: POST https://dagshub.com/login/oauth/middleman "HTTP/1.1 200 OK"
+[ 2025-10-18 14:46:14,901 ] 1025 httpx - INFO - HTTP Request: POST https://dagshub.com/login/oauth/access_token "HTTP/1.1 200 OK"
+[ 2025-10-18 14:46:16,072 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2025-10-18 14:46:16,076 ] 107 dagshub - INFO - Accessing as SubhamParajuli
+[ 2025-10-18 14:46:17,868 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/SubhamParajuli/models "HTTP/1.1 200 OK"

@@ -1,0 +1,21 @@
+[ 2025-10-18 14:53:31,651 ] 20 root - INFO - Log file created successfully!
+[ 2025-10-18 14:53:37,290 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2025-10-18 14:53:37,295 ] 107 dagshub - INFO - Accessing as SubhamParajuli
+[ 2025-10-18 14:53:40,376 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/SubhamParajuli/models "HTTP/1.1 200 OK"
+[ 2025-10-18 14:53:42,827 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2025-10-18 14:53:42,830 ] 107 dagshub - INFO - Initialized MLflow to track repo "SubhamParajuli/models"
+[ 2025-10-18 14:53:42,832 ] 107 dagshub - INFO - Repository SubhamParajuli/models initialized!
+[ 2025-10-18 14:53:42,833 ] 10 root - INFO - exectution has started
+[ 2025-10-18 14:53:42,833 ] 22 root - INFO - Reading SQL database started
+[ 2025-10-18 14:53:42,854 ] 30 root - INFO - Connection established
+[ 2025-10-18 14:53:43,086 ] 28 root - INFO - Reading from mysql database
+[ 2025-10-18 14:53:43,096 ] 34 root - INFO - Data ingestion is completed.
+[ 2025-10-18 14:53:43,136 ] 68 root - INFO - Reading the train and test file.
+[ 2025-10-18 14:53:43,136 ] 48 root - INFO - Categorical Columns:['gender', 'race_ethnicity', 'parental_level_of_education', 'lunch', 'test_preparation_course']
+[ 2025-10-18 14:53:43,136 ] 49 root - INFO - Numerical Columns: ['writing_score', 'reading_score']
+[ 2025-10-18 14:53:43,137 ] 81 root - INFO - Applying preprocessing on training and test dataframe
+[ 2025-10-18 14:53:43,158 ] 93 root - INFO - Saved preprocessing object.
+[ 2025-10-18 14:53:43,160 ] 52 root - INFO - Spit training and test input data
+[ 2025-10-18 14:53:43,160 ] 51 root - INFO - Evaluating HyperParameters of model
+[ 2025-10-18 14:53:55,521 ] 152 root - WARNING - MLflow logging failed: INTERNAL_ERROR: Response: {'error': 'unsupported endpoint, please contact support@dagshub.com'}. Continuing with local model save only.
+[ 2025-10-18 14:53:55,524 ] 161 root - INFO - Best found model on both training and testing dataset: Lasso(alpha=0.1) at 88.2059128266036

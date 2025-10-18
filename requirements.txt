@@ -6,4 +6,6 @@ pymysql
 python-dotenv
 matplotlib
 seaborn
+mlflow
+dagshub
 -e .

@@ -1,0 +1,48 @@
+[ 2025-10-18 15:27:48,496 ] 20 root - INFO - Log file created successfully!
+[ 2025-10-18 15:27:54,126 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2025-10-18 15:27:54,133 ] 107 dagshub - INFO - Accessing as SubhamParajuli
+[ 2025-10-18 15:27:56,259 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/SubhamParajuli/models "HTTP/1.1 200 OK"
+[ 2025-10-18 15:27:58,669 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2025-10-18 15:27:58,673 ] 107 dagshub - INFO - Initialized MLflow to track repo "SubhamParajuli/models"
+[ 2025-10-18 15:27:58,676 ] 107 dagshub - INFO - Repository SubhamParajuli/models initialized!
+[ 2025-10-18 15:27:58,676 ] 10 root - INFO - exectution has started
+[ 2025-10-18 15:27:58,676 ] 22 root - INFO - Reading SQL database started
+[ 2025-10-18 15:27:58,702 ] 30 root - INFO - Connection established
+[ 2025-10-18 15:27:58,906 ] 28 root - INFO - Reading from mysql database
+[ 2025-10-18 15:27:58,914 ] 34 root - INFO - Data ingestion is completed.
+[ 2025-10-18 15:27:58,953 ] 68 root - INFO - Reading the train and test file.
+[ 2025-10-18 15:27:58,953 ] 48 root - INFO - Categorical Columns:['gender', 'race_ethnicity', 'parental_level_of_education', 'lunch', 'test_preparation_course']
+[ 2025-10-18 15:27:58,953 ] 49 root - INFO - Numerical Columns: ['writing_score', 'reading_score']
+[ 2025-10-18 15:27:58,954 ] 81 root - INFO - Applying preprocessing on training and test dataframe
+[ 2025-10-18 15:27:58,967 ] 93 root - INFO - Saved preprocessing object.
+[ 2025-10-18 15:27:58,968 ] 52 root - INFO - Spit training and test input data
+[ 2025-10-18 15:27:58,968 ] 51 root - INFO - Evaluating HyperParameters of model
+[ 2025-10-18 15:28:11,962 ] 151 root - ERROR - MLflow logging failed: INTERNAL_ERROR: Response: {'error': 'unsupported endpoint, please contact support@dagshub.com'}
+Traceback:
+Traceback (most recent call last):
+  File "C:\Users\suvam\Desktop\models\src\mlproject\components\model_trainer.py", line 147, in initiate_model_trainer
+    mlflow.sklearn.log_model(best_model, name="model")
+  File "C:\Users\suvam\Desktop\models\myenv\lib\site-packages\mlflow\sklearn\__init__.py", line 426, in log_model
+    return Model.log(
+  File "C:\Users\suvam\Desktop\models\myenv\lib\site-packages\mlflow\models\model.py", line 1170, in log
+    model = _create_logged_model(
+  File "C:\Users\suvam\Desktop\models\myenv\lib\site-packages\mlflow\tracking\fluent.py", line 2323, in _create_logged_model
+    return MlflowClient()._create_logged_model(
+  File "C:\Users\suvam\Desktop\models\myenv\lib\site-packages\mlflow\tracking\client.py", line 5492, in _create_logged_model
+    return self._tracking_client.create_logged_model(
+  File "C:\Users\suvam\Desktop\models\myenv\lib\site-packages\mlflow\telemetry\track.py", line 24, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\suvam\Desktop\models\myenv\lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 870, in create_logged_model
+    return self.store.create_logged_model(
+  File "C:\Users\suvam\Desktop\models\myenv\lib\site-packages\mlflow\store\tracking\rest_store.py", line 894, in create_logged_model
+    response_proto = self._call_endpoint(CreateLoggedModel, req_body)
+  File "C:\Users\suvam\Desktop\models\myenv\lib\site-packages\mlflow\store\tracking\rest_store.py", line 201, in _call_endpoint
+    return call_endpoint(
+  File "C:\Users\suvam\Desktop\models\myenv\lib\site-packages\mlflow\utils\rest_utils.py", line 571, in call_endpoint
+    response = verify_rest_response(response, endpoint)
+  File "C:\Users\suvam\Desktop\models\myenv\lib\site-packages\mlflow\utils\rest_utils.py", line 311, in verify_rest_response
+    raise RestException(json.loads(response.text))
+mlflow.exceptions.RestException: INTERNAL_ERROR: Response: {'error': 'unsupported endpoint, please contact support@dagshub.com'}
+
+Continuing with local model save only.
+[ 2025-10-18 15:28:11,964 ] 161 root - INFO - Best found model on both training and testing dataset: Lasso(alpha=0.1) at 88.2059128266036

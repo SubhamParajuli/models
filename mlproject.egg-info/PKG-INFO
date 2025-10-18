@@ -11,6 +11,7 @@ Requires-Dist: pymysql
 Requires-Dist: python-dotenv
 Requires-Dist: matplotlib
 Requires-Dist: seaborn
+Requires-Dist: mlflow
 Dynamic: author
 Dynamic: author-email
 Dynamic: requires-dist

@@ -1,0 +1,22 @@
+[ 2025-10-18 14:50:16,309 ] 20 root - INFO - Log file created successfully!
+[ 2025-10-18 14:50:20,359 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2025-10-18 14:50:20,365 ] 107 dagshub - INFO - Accessing as SubhamParajuli
+[ 2025-10-18 14:50:21,619 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/SubhamParajuli/models "HTTP/1.1 200 OK"
+[ 2025-10-18 14:50:22,860 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2025-10-18 14:50:22,863 ] 107 dagshub - INFO - Initialized MLflow to track repo "SubhamParajuli/models"
+[ 2025-10-18 14:50:22,864 ] 107 dagshub - INFO - Repository SubhamParajuli/models initialized!
+[ 2025-10-18 14:50:22,865 ] 10 root - INFO - exectution has started
+[ 2025-10-18 14:50:22,865 ] 22 root - INFO - Reading SQL database started
+[ 2025-10-18 14:50:22,874 ] 30 root - INFO - Connection established
+[ 2025-10-18 14:50:23,408 ] 28 root - INFO - Reading from mysql database
+[ 2025-10-18 14:50:23,418 ] 34 root - INFO - Data ingestion is completed.
+[ 2025-10-18 14:50:23,458 ] 68 root - INFO - Reading the train and test file.
+[ 2025-10-18 14:50:23,459 ] 48 root - INFO - Categorical Columns:['gender', 'race_ethnicity', 'parental_level_of_education', 'lunch', 'test_preparation_course']
+[ 2025-10-18 14:50:23,459 ] 49 root - INFO - Numerical Columns: ['writing_score', 'reading_score']
+[ 2025-10-18 14:50:23,462 ] 81 root - INFO - Applying preprocessing on training and test dataframe
+[ 2025-10-18 14:50:23,478 ] 93 root - INFO - Saved preprocessing object.
+[ 2025-10-18 14:50:23,479 ] 52 root - INFO - Spit training and test input data
+[ 2025-10-18 14:50:23,480 ] 51 root - INFO - Evaluating HyperParameters of model
+[ 2025-10-18 14:51:27,929 ] 868 urllib3.connectionpool - WARNING - Retrying (Retry(total=6, connect=7, read=7, redirect=7, status=7)) after connection broken by 'SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:997)'))': /SubhamParajuli/models.mlflow/api/2.0/mlflow/runs/create
+[ 2025-10-18 14:51:36,341 ] 152 root - WARNING - MLflow logging failed: INTERNAL_ERROR: Response: {'error': 'unsupported endpoint, please contact support@dagshub.com'}. Continuing with local model save only.
+[ 2025-10-18 14:51:36,344 ] 161 root - INFO - Best found model on both training and testing dataset: Lasso(alpha=0.1) at 88.2059128266036

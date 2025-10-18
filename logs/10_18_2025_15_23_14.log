@@ -1,0 +1,17 @@
+[ 2025-10-18 15:23:14,132 ] 20 root - INFO - Log file created successfully!
+[ 2025-10-18 15:23:17,664 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2025-10-18 15:23:17,673 ] 107 dagshub - INFO - Accessing as SubhamParajuli
+[ 2025-10-18 15:23:48,359 ] 32 root - WARNING - DagsHub initialization failed: _ssl.c:980: The handshake operation timed out. Continuing with local model training.
+[ 2025-10-18 15:23:48,361 ] 10 root - INFO - exectution has started
+[ 2025-10-18 15:23:48,361 ] 22 root - INFO - Reading SQL database started
+[ 2025-10-18 15:23:48,363 ] 30 root - INFO - Connection established
+[ 2025-10-18 15:23:48,678 ] 28 root - INFO - Reading from mysql database
+[ 2025-10-18 15:23:48,687 ] 34 root - INFO - Data ingestion is completed.
+[ 2025-10-18 15:23:48,728 ] 68 root - INFO - Reading the train and test file.
+[ 2025-10-18 15:23:48,728 ] 48 root - INFO - Categorical Columns:['gender', 'race_ethnicity', 'parental_level_of_education', 'lunch', 'test_preparation_course']
+[ 2025-10-18 15:23:48,728 ] 49 root - INFO - Numerical Columns: ['writing_score', 'reading_score']
+[ 2025-10-18 15:23:48,729 ] 81 root - INFO - Applying preprocessing on training and test dataframe
+[ 2025-10-18 15:23:48,759 ] 93 root - INFO - Saved preprocessing object.
+[ 2025-10-18 15:23:48,792 ] 52 root - INFO - Spit training and test input data
+[ 2025-10-18 15:23:48,792 ] 51 root - INFO - Evaluating HyperParameters of model
+[ 2025-10-18 15:23:51,940 ] 161 root - INFO - Best found model on both training and testing dataset: Lasso(alpha=0.1) at 88.2059128266036
