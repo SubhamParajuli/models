@@ -1,0 +1,13 @@
+[ 2025-10-18 12:00:50,644 ] 20 root - INFO - Log file created successfully!
+[ 2025-10-18 12:01:06,091 ] 10 root - INFO - exectution has started
+[ 2025-10-18 12:01:06,091 ] 22 root - INFO - Reading SQL database started
+[ 2025-10-18 12:01:06,206 ] 30 root - INFO - Connection established
+[ 2025-10-18 12:01:06,267 ] 28 root - INFO - Reading from mysql database
+[ 2025-10-18 12:01:06,275 ] 34 root - INFO - Data ingestion is completed.
+[ 2025-10-18 12:01:06,313 ] 68 root - INFO - Reading the train and test file.
+[ 2025-10-18 12:01:06,313 ] 48 root - INFO - Categorical Columns:['gender', 'race_ethnicity', 'parental_level_of_education', 'lunch', 'test_preparation_course']
+[ 2025-10-18 12:01:06,313 ] 49 root - INFO - Numerical Columns: ['writing_score', 'reading_score']
+[ 2025-10-18 12:01:06,314 ] 81 root - INFO - Applying preprocessing on training and test dataframe
+[ 2025-10-18 12:01:06,326 ] 93 root - INFO - Saved preprocessing object.
+[ 2025-10-18 12:01:06,327 ] 35 root - INFO - Spit training and test input data
+[ 2025-10-18 12:01:06,328 ] 51 root - INFO - Evaluating HyperParameters of model
